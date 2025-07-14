@@ -16,58 +16,58 @@ classifier = load_model()
 
 # FDP topic mapping
 fdp_topic_map = {
-    "A11": ["Advanced Subject Knowledge", "Emerging Trends", "Deep Dive Seminars"],
-    "A12": ["Innovative Teaching Methods", "Case-Based Learning", "Flipped Classrooms"],
-    "A13": ["Practical Lab Pedagogy", "Hands-on Workshops", "Industry Practices"],
-    "A14": ["Data Mining Tools", "AI in Info Management", "Reference Managers"],
-    "A15": ["Technical English", "Scholarly Communication", "Domain-specific Language"],
-    "A16": ["Academic Writing", "Quant Techniques", "Research Methods"],
+    "A11:Subject Knowledge": ["Advanced Subject Knowledge", "Emerging Trends", "Deep Dive Seminars"],
+    "A12:Teaching Methods – Theoretical Knowledge": ["Innovative Teaching Methods", "Case-Based Learning", "Flipped Classrooms"],
+    "A13:Teaching Methods – Practical Application": ["Practical Lab Pedagogy", "Hands-on Workshops", "Industry Practices"],
+    "A14:Information Literacy and Management": ["Data Mining Tools", "AI in Info Management", "Reference Managers"],
+    "A15:Languages ": ["Technical English", "Scholarly Communication", "Domain-specific Language"],
+    "A16:Academic Literacy and Numeracy": ["Academic Writing", "Quant Techniques", "Research Methods"],
 
-    "A21": ["Critical Analysis Methods", "Problem Structuring", "Evidence-based Discussions"],
-    "A22": ["Synthesis Techniques", "Cross-disciplinary Ideas", "Thematic Integration"],
-    "A23": ["Debate & Argumentation", "Logical Reasoning", "Reflective Thinking"],
-    "A24": ["Outcome Assessment", "Evaluation Metrics", "Rubrics Design"],
-    "A25": ["Problem Solving Frameworks", "Creative Ideation", "Solution Modelling"],
+    "A21:Analyzing": ["Critical Analysis Methods", "Problem Structuring", "Evidence-based Discussions"],
+    "A22:Synthesizing": ["Synthesis Techniques", "Cross-disciplinary Ideas", "Thematic Integration"],
+    "A23:Critical Thinking": ["Debate & Argumentation", "Logical Reasoning", "Reflective Thinking"],
+    "A24:Evaluating": ["Outcome Assessment", "Evaluation Metrics", "Rubrics Design"],
+    "A25:Problem Solving": ["Problem Solving Frameworks", "Creative Ideation", "Solution Modelling"],
 
-    "A31": ["Curiosity Workshops", "Inquiry Learning", "Research Questions"],
-    "A32": ["Advanced Conceptual Thinking", "Abstract Models", "Strategic Insight"],
-    "A33": ["Innovation Labs", "Design Bootcamps", "Startup Mindsets"],
-    "A34": ["Argument Building", "Position Papers", "Ethical Dilemmas"],
+    "A31:Inquiring Mind": ["Curiosity Workshops", "Inquiry Learning", "Research Questions"],
+    "A32:Intellectual Insight": ["Advanced Conceptual Thinking", "Abstract Models", "Strategic Insight"],
+    "A33:Innovation": ["Innovation Labs", "Design Bootcamps", "Startup Mindsets"],
+    "A34:Argument Construction": ["Argument Building", "Position Papers", "Ethical Dilemmas"],
 
-    "B11": ["Motivation Strategies", "Teaching Passion", "Gamified Learning"],
-    "B12": ["Goal Setting", "Resilience", "Professional Perseverance"],
-    "B13": ["Integrity in Research & Teaching", "Plagiarism Awareness", "Academic Honesty"],
-    "B14": ["Personal Responsibility", "Ownership Projects", "Self-Directed Learning"],
+    "B11:Enthusiasm": ["Motivation Strategies", "Teaching Passion", "Gamified Learning"],
+    "B12:Perseverance": ["Goal Setting", "Resilience", "Professional Perseverance"],
+    "B13:Integrity": ["Integrity in Research & Teaching", "Plagiarism Awareness", "Academic Honesty"],
+    "B14:Responsibility": ["Personal Responsibility", "Ownership Projects", "Self-Directed Learning"],
 
-    "B21": ["Effective Lesson Planning", "Teaching Blueprints", "Prioritization"],
-    "B22": ["Commitment Workshops", "Professional Accountability", "Goal Mapping"],
-    "B23": ["Time Management Tools", "Scheduling", "Deadline Adherence"],
-    "B24": ["Change Management", "Adaptive Teaching", "Risk Awareness"],
+    "B21:Preparation and Prioritization": ["Effective Lesson Planning", "Teaching Blueprints", "Prioritization"],
+    "B22:Commitment to Teaching": ["Commitment Workshops", "Professional Accountability", "Goal Mapping"],
+    "B23:Time Management": ["Time Management Tools", "Scheduling", "Deadline Adherence"],
+    "B24:Responsiveness to Change": ["Change Management", "Adaptive Teaching", "Risk Awareness"],
 
-    "B31": ["Career Advancement", "Certifications", "Digital Portfolios"],
-    "B32": ["Student Feedback", "Continuous Improvement", "Feedback Loops"],
-    "B33": ["Networking Forums", "Peer Learning", "Professional Societies"],
-    "B34": ["Thought Leadership", "Public Speaking", "Reputation Building"],
+    "B31:Continuing Professional Development": ["Career Advancement", "Certifications", "Digital Portfolios"],
+    "B32:Student Feedback": ["Student Feedback", "Continuous Improvement", "Feedback Loops"],
+    "B33:Networking": ["Networking Forums", "Peer Learning", "Professional Societies"],
+    "B34:Reputation and Esteem": ["Thought Leadership", "Public Speaking", "Reputation Building"],
 
-    "C11": ["Ethics in Teaching", "Sustainability Practices", "Responsible Research"],
-    "C12": ["IPR & Patents", "Copyright for Faculty", "Data Sharing Norms"],
-    "C21": ["Institutional Strategies", "Aligning NEP 2020", "Strategic Planning"],
-    "C31": ["Funding Proposals", "Grant Management", "Budget Allocations"],
+    "C11:Ethics, Principles, and Sustainability": ["Ethics in Teaching", "Sustainability Practices", "Responsible Research"],
+    "C12:Intellectual Property Rights and Copyright": ["IPR & Patents", "Copyright for Faculty", "Data Sharing Norms"],
+    "C21:Research Strategy": ["Institutional Strategies", "Aligning NEP 2020", "Strategic Planning"],
+    "C31:Income and Funding Generation": ["Funding Proposals", "Grant Management", "Budget Allocations"],
 
-    "D11": ["Collaborative Research", "Team Dynamics", "Cross-functional Teams"],
-    "D12": ["Delegation Skills", "Negotiating Deadlines", "People Coordination"],
-    "D13": ["Effective Supervision", "UG Project Management", "Mentored Assessments"],
-    "D14": ["Mentoring Juniors", "Skill Transfer", "Guided Learning"],
-    "D15": ["Influence Building", "Institutional Leadership", "Policy Influence"],
-    "D16": ["Research Collaborations", "Consortium Projects", "Joint Publications"],
-    "D17": ["Inclusive Teaching", "Diversity Sensitization", "Equity Frameworks"],
+    "D11:Team Working": ["Collaborative Research", "Team Dynamics", "Cross-functional Teams"],
+    "D12:People Management": ["Delegation Skills", "Negotiating Deadlines", "People Coordination"],
+    "D13:Supervision": ["Effective Supervision", "UG Project Management", "Mentored Assessments"],
+    "D14:Mentoring": ["Mentoring Juniors", "Skill Transfer", "Guided Learning"],
+    "D15:Influence and Leadership": ["Influence Building", "Institutional Leadership", "Policy Influence"],
+    "D16:Collaboration": ["Research Collaborations", "Consortium Projects", "Joint Publications"],
+    "D17:Equality and Diversity": ["Inclusive Teaching", "Diversity Sensitization", "Equity Frameworks"],
 
-    "D21": ["Communication Skills", "Academic Presentations", "Stakeholder Reports"],
-    "D22": ["Digital Media Outreach", "Webinars & MOOCs", "Online Engagement"],
-    "D23": ["Publishing High Impact", "Grant Writing", "Conference Papers"],
+    "D21:Communication Methods": ["Communication Skills", "Academic Presentations", "Stakeholder Reports"],
+    "D22:Communication Media": ["Digital Media Outreach", "Webinars & MOOCs", "Online Engagement"],
+    "D23:Publication": ["Publishing High Impact", "Grant Writing", "Conference Papers"],
 
-    "D31": ["Innovative Teaching Aids", "UG Research Projects", "Seminars"],
-    "D32": ["Policy Understanding", "NBA/NAAC Prep", "Education Regulations"]
+    "D31:Teaching": ["Innovative Teaching Aids", "UG Research Projects", "Seminars"],
+    "D32:Policy": ["Policy Understanding", "NBA/NAAC Prep", "Education Regulations"]
 }
 
 # Main Title
@@ -94,37 +94,37 @@ top_subdomains = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:3]
 rule_based_fdps = []
 triggered_rules = []
 
-if scores["A11"] > 8 and scores["A21"] > 7:
+if scores["A11:Subject Knowledge"] > 8 and scores["A21:Analyzing"] > 7:
     rule_based_fdps.append("Advanced interdisciplinary FDPs combining subject expertise and cognitive challenges")
-    triggered_rules.append("A11 > 8 & A21 > 7")
+    triggered_rules.append("A11:Subject Knowledge > 8 & A21:Analyzing > 7")
 
-if scores["A31"] > 8:
+if scores["A31:Inquiring Mind"] > 8:
     rule_based_fdps.append("Creative pedagogy, design thinking, gamification workshops")
-    triggered_rules.append("A31 > 8")
+    triggered_rules.append("A31:Inquiring Mind > 8")
 
-if scores["B21"] > 7 and scores["B31"] > 7:
+if scores["B21:Preparation and Prioritization"] > 7 and scores["B31:Continuing Professional Development"] > 7:
     rule_based_fdps.append("Time management, career progression, leadership skills")
-    triggered_rules.append("B21 > 7 & B31 > 7")
+    triggered_rules.append("B21:Preparation and Prioritization > 7 & B31:Continuing Professional Development > 7")
 
-if scores["C21"] > 8 or scores["C31"] > 8:
+if scores["C21:Research Strategy"] > 8 or scores["C31:Income and Funding Generation"] > 8:
     rule_based_fdps.append("Research proposal writing, grants & funding management")
-    triggered_rules.append("C21 > 8 or C31 > 8")
+    triggered_rules.append("C21:Research Strategy > 8 or C31:Income and Funding Generation > 8")
 
-if scores["D11"] > 8 and scores["D21"] > 7:
+if scores["D11:Team Working"] > 8 and scores["D21:Communication Methods"] > 7:
     rule_based_fdps.append("Collaboration, communication, stakeholder negotiation")
-    triggered_rules.append("D11 > 8 & D21 > 7")
+    triggered_rules.append("D11:Team Working > 8 & D21:Communication Methods > 7")
 
-if scores["D31"] > 7:
+if scores["D31:Teaching"] > 7:
     rule_based_fdps.append("Public engagement, impact creation, industry partnerships")
-    triggered_rules.append("D31 > 7")
+    triggered_rules.append("D31:Teaching > 7")
 
-if scores["B11"] > 8 and scores["A31"] > 7:
+if scores["B11:Enthusiasm"] > 8 and scores["A31:Inquiring Mind"] > 7:
     rule_based_fdps.append("Motivation, resilience, innovative teaching FDPs")
-    triggered_rules.append("B11 > 8 & A31 > 7")
+    triggered_rules.append("B11:Enthusiasm > 8 & A31:Inquiring Mind > 7")
 
-if scores["C11"] > 8 and scores["B11"] > 7:
+if scores["C11:Ethics, Principles, and Sustainability"] > 8 and scores["B11:Enthusiasm"] > 7:
     rule_based_fdps.append("Ethics, professional integrity, mentoring workshops")
-    triggered_rules.append("C11 > 8 & B11 > 7")
+    triggered_rules.append("C11:Ethics, Principles, and Sustainability > 8 & B11:Enthusiasm > 7")
 
 # Any two domains > 8
 domains_over_8 = sum(1 for v in scores.values() if v > 8)
