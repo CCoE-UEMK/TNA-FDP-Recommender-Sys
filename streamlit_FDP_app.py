@@ -78,7 +78,7 @@ st.write(
 
 # Sidebar inputs
 st.sidebar.header("📝 Enter TNA Scores (1-10)")
-scores = {k: st.sidebar.slider(k, 1, 10, 5) for k in fdp_topic_map.keys()}
+scores = {k: st.sidebar.slider(k, 1.0, 10.0, 5.0, step=0.1) for k in fdp_topic_map.keys()}
 
 # Prepare feature vector
 X = np.array(list(scores.values())).reshape(1, -1)
